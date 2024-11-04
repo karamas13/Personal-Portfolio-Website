@@ -28,8 +28,11 @@ export const PROJECTS = [
     title: "Photo-Gallery Website",
     image: photogallery,
     description:
-      "A fully functional photo-gallery website with features like an image uploader based on categories, image delete feature, and user authentication. This project is for an actual client so acces to the crud functionalities of the application is not available.",
+      "A fully functional photo-gallery website with features like an image uploader based on categories, image delete feature, and user authentication. This project is for an actual client so access to the crud functionalities of the application is not available.",
     technologies: ["React", "CSS", "Tailwind", "Node.js", "Firebase", "Netlify"],
+    link:"https://nikosbrinias-photography.netlify.app/",
+    details:
+    "In this project, I developed a dynamic photography website that showcases the client's work across various categories, including ecosystems, individuals, meals, and concerts. Leveraging Firebase for backend services, the site allows the client to seamlessly upload images while ensuring a smooth user experience through responsive design. I implemented authentication features to safeguard the upload process, allowing only users registered withing the database to use the admin control panel. The site also incorporates a robust storage solution, enabling the client to delete their images, ensuring their content remains curated and relevant. With an eye for detail, I focused on creating an intuitive interface that highlights the beauty of photography, making it accessible and engaging for visitors across all devices.",
   },
 
 ];
