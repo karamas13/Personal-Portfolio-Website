@@ -2,6 +2,7 @@ import {FaLinkedin, FaSquare} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import { FaSquareEnvelope} from "react-icons/fa6";
+import logo from "../assets/Logo.png";
 
 
 
@@ -10,7 +11,7 @@ const NavBar = () => {
     return ( 
         <nav className="mb-20 flex items-center justify-between py-6">
           <div className="flex flex-shrink-0 items-center">
-             <h1 className="text-6xl">NK</h1>
+             <img className="h-20" src={logo} alt="logo" />
           </div>
           <div className="m-8 flex items-center justify-center gap-6 text-3xl">
           <div className="text-center tracking-tighter my-2">
