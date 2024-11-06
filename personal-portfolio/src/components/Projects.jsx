@@ -1,6 +1,6 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 
 const Projects = () => {
   return (
@@ -29,8 +29,7 @@ const Projects = () => {
                 <p className="mb-4 text-neutral-400">{project.description}</p>
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">{tech}</span>
-                ))}
-                {/* Add Link to navigate to the project detail page */}
+                ))}          
                 <Link to={`/ProjectDetail/${project.title}`} className="ml-2 inline-block text-bold text-lg text-pink-800 hover:underline ">
                   View Details
                 </Link>

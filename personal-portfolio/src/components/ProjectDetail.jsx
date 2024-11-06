@@ -24,19 +24,19 @@ const ProjectDetail = () => {
        className="lg:text-5xl text-3xl font-bold text-neutral-100 text-center">
        {project.title}
       </motion.h2>
-      <div className='flex items-center lg:flex-row flex-col'>
+      <div className='flex items-center lg:flex-col flex-col'>
        <motion.img 
-        animate={{opacity:1, x:0}}
-        initial={{opacity:0, x:-100}}
+        animate={{opacity:1, y:0}}
+        initial={{opacity:0, y:-100}}
         transition={{duration: 0.8}}
-        src={project.image} alt={project.title} className="my-10 lg:h-[25rem] h-[15rem] w-auto object-cover rounded-xl" 
+        src={project.image} alt={project.title} className="my-10 lg:h-[25rem] h-[15rem] w-auto object-cover rounded-xl mr-5" 
        />
      <motion.div 
-       animate={{opacity:1, x:0}}
-       initial={{opacity:0, x:100}}
+       animate={{opacity:1, y:0}}
+       initial={{opacity:0, y:100}}
        transition={{duration: 0.8}}
-      className="flex flex-col items-center">
-       <p className='lg:ml-20 lg:w-[30rem] w-[22rem] text-center'>{project.description}</p>
+      className="flex flex-col items-center w-full p-2">
+       <p className='lg:w-[30rem] w-1.5/2 text-center'>{project.description}</p>
       <a href={project.link} target="_blank" className=""> 
        <motion.button 
         whileHover={{
@@ -44,7 +44,7 @@ const ProjectDetail = () => {
             textShadow: "0px 0px 8px rgb(138,43,226)",
             boxShadow: "0px 0px 8px rgb(138,43,226)",
         }}
-        className='text-2xl mt-20 border lg:w-[180%] mx-auto lg:p-1 p-2 rounded-2xl border-purple-600 text-purple-600 text-bold'
+        className='text-2xl mt-20 border lg:w-[100%] lg:p-1 lg:px-5 p-2 rounded-2xl border-purple-600 text-purple-600 text-bold'
        >
         Visit
        </motion.button>
@@ -58,7 +58,7 @@ const ProjectDetail = () => {
         transition={{duration: 0.8}}
        className='w-full flex flex-col items-center justify-center my-5 border-b border-t p-5 border-neutral-800'>
       <h3 className="mx-auto text-3xl mb-5"> Details</h3>
-      <p className='lg:w-[45rem] w-[22rem] text-center'>{project.details}</p>
+      <p className='lg:w-[45rem] w-1.5/2 text-center'>{project.details}</p>
       </motion.div>
      
       <h3 className="mt-4 text-xl text-center mb-2">Technologies Used:</h3>
