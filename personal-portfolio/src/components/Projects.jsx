@@ -29,10 +29,12 @@ const Projects = () => {
                 className="w-full max-w-xl lg:w-3/4">
                 <h6 className="mb-2 font-semibold">{project.title}</h6>
                 <p className="mb-4 text-neutral-400">{project.description}</p>
+                <div className="flex flex-wrap">
                 {project.technologies.map((tech, index) => (
-                  <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">{tech}</span>
-                ))}          
-                <Link to={`/ProjectDetail/${project.title}`} className="ml-2 inline-block text-bold text-lg text-pink-800 hover:underline ">
+                  <span key={index} className="lg:mr-2 lg:my-0 my-2 mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900 ">{tech}</span>
+                ))} 
+                </div>         
+                <Link to={`/ProjectDetail/${project.title}`} className="my-1 inline-block text-bold text-xl text-pink-800 hover:underline">
                   View Details
                 </Link>
             </motion.div>
