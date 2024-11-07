@@ -32,7 +32,7 @@ const Projects = () => {
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">{tech}</span>
                 ))}          
-                <Link to={`/project/${project.title}`} className="ml-2 inline-block text-bold text-lg text-pink-800 hover:underline ">
+                <Link to={`/ProjectDetail/${project.title}`} className="ml-2 inline-block text-bold text-lg text-pink-800 hover:underline ">
                   View Details
                 </Link>
             </motion.div>
