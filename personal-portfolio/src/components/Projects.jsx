@@ -1,3 +1,5 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'; 
@@ -6,10 +8,10 @@ const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2 
-       whileInView={{opacity:1, y:0}}
-       initial={{opacity:0, y:-100}}
-       transition={{duration: 0.7}}
-       className="my-20 text-center text-4xl">Projects</motion.h2>
+        whileInView={{opacity:1, y:0}}
+        initial={{opacity:0, y:-100}}
+        transition={{duration: 0.7}}
+        className="my-20 text-center text-4xl">Projects</motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
@@ -30,7 +32,7 @@ const Projects = () => {
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900">{tech}</span>
                 ))}          
-                <Link to={`/ProjectDetail/${project.title}`} className="ml-2 inline-block text-bold text-lg text-pink-800 hover:underline ">
+                <Link to={`/project/${project.title}`} className="ml-2 inline-block text-bold text-lg text-pink-800 hover:underline ">
                   View Details
                 </Link>
             </motion.div>

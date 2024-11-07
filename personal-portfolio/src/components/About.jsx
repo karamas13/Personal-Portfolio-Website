@@ -1,6 +1,7 @@
 import aboutme from "../assets/aboutme.jpg"
 import { ABOUT_TEXT } from "../constants"
 import { motion } from "framer-motion"
+import { Helmet } from 'react-helmet'; 
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
            transition={{duration: 0.7}}
            className="w-full lg:w-1/2 lg:p-8">
             <div className="flex items-center justify-center">
-              <img className="h-[38rem] w-auto object-cover rounded-xl" src={ aboutme }/>
+              <img className="h-[38rem] w-auto object-cover rounded-xl" src={ aboutme } alt="A professional photo of Nick Karamaroudis"/>
             </div>
             </motion.div>
        
