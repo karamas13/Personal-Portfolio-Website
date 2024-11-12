@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://github.com/karamas13/photo-gallery/blob/main/photo-gallery/public/images/logowhite.png" alt="NB Photography" width="400">
+  <img src="personal-portfolio/src/assets/Logo.png" width="400">
   <br>
  Nick Karamaroudis Portfolio
   <br>
