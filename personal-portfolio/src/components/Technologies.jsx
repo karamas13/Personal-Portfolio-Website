@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { RiReactjsLine, RiFireLine, RiNodejsLine, RiTailwindCssFill } from "react-icons/ri";
+import { RiReactjsLine, RiFireLine, RiNodejsLine, RiTailwindCssFill, RiNextjsLine } from "react-icons/ri";
 import { BsBootstrap, BsFiletypeSql } from "react-icons/bs";
 import { SiMongodb } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -81,6 +81,13 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4 text-green-600 text-6xl">
           <SiMongodb />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4 text-slate-200 text-6xl">
+          <RiNextjsLine />
         </motion.div>
       </motion.div>
     </div>
