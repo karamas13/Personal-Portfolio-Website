@@ -26,10 +26,10 @@ const Experience = () => {
               initial={{opacity: 0, x: 100}}
               transition={{duration: 1}} 
               className="w-full sm:w-2/3 md:w-3/4 max-w-xl">
-              <h6 className="mb-2 font-semibold">
+              <h3 className="mb-2 font-semibold">
                 {experience.role} -{" "}
                 <span className="text-sm text-purple-100">{experience.company}</span>
-              </h6>
+              </h3>
               <p className="mb-4 text-neutral-400">{experience.description}</p>
               <div className="flex flex-wrap">
                 {experience.technologies.map((tech, index) => (

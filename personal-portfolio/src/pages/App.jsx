@@ -28,8 +28,8 @@ function App() {
             <Experience />
             <Projects />
             <Contact />
-            <footer className="x-auto text-neutral-400">
-              <p className="m-5 text-center">© 2024 nickkaramaroudisdev.com All rights reserved | Designed and Developed by Nick Karamaroudis</p>
+            <footer className="mx-auto ">
+              <p className="m-5 text-center text-white">© 2024 nickkaramaroudisdev.com All rights reserved | Designed and Developed by Nick Karamaroudis</p>
             </footer>
           </div>
         </div>
